@@ -2,8 +2,13 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Auto autoa1 = new Auto();
-        Auto autoa2 = new Auto();
+        Auto auto1 = new Auto();
+        auto1.setPuertas(10);
+        auto1.setColor("Azul");
+        Motor motor1= auto1.getMotor();
+        int puertas1=auto1.getPuertas();
+
+
         
 
     }
