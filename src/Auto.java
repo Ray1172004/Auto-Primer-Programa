@@ -6,6 +6,26 @@ public class Auto {
     private Motor motor;
     private Dueno dueno;
 
+    public Auto(){
+
+    }
+
+    public Auto(int nuemroRuedas, String color, int puertas){
+        this.numeroRuedas=nuemroRuedas;
+        this.color= color;
+        this.puertas= puertas;
+
+    }
+
+
+    public Auto(int numeroRuedas, String color, int puertas, Motor motor, Dueno dueno) {
+        this.numeroRuedas = numeroRuedas;
+        this.color = color;
+        this.puertas = puertas;
+        this.motor = motor;
+        this.dueno = dueno;
+    }
+
     public int getNumeroRuedas() {
         return numeroRuedas;
     }
@@ -34,7 +54,7 @@ public class Auto {
         return motor;
     }
 
-    public void setMotor(Motor motor) {
+    public void setMotor() {
         this.motor = motor;
     }
 
@@ -44,5 +64,12 @@ public class Auto {
 
     public void setDueno(Dueno dueno) {
         this.dueno = dueno;
+    }
+
+    public void imprimirColorPuertas (){
+        String numAuto = "";
+        System.out.println("El colo del vehiculo "+numAuto+"es: "+color+"y el numero de puertas es: "+puertas);
+
+
     }
 }

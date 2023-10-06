@@ -8,6 +8,18 @@ public class Dueno {
     private String tipoSangre="";
     private double altura=0;
 
+
+    public Dueno(String colorPiel, int genero, int edad, int cedula, String nacionalidad, double peso, String tipoSangre, double altura) {
+        this.colorPiel = colorPiel;
+        this.genero = genero;
+        this.edad = edad;
+        this.cedula = cedula;
+        this.nacionalidad = nacionalidad;
+        this.peso = peso;
+        this.tipoSangre = tipoSangre;
+        this.altura = altura;
+    }
+
     public String esMayorEdad(){
         String my="";
         if(edad>=18){
@@ -82,5 +94,11 @@ public class Dueno {
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+    public void imprimirDueno() {
+       // String numDueno = "";
+        System.out.println("\nEl color de piel del ocupante es:\n"+colorPiel+"\nEl genero de esta persona es:\n"+genero+"\nSiendo mayor de edad teniendo:\n"+edad);
+        System.out.println("\nSu nacionalidad es: "+nacionalidad+"\nY peso unos: "+peso+"kg");
     }
 }
