@@ -34,7 +34,7 @@ public class Motor {
     }
 
     public void imprimirMotor() {
-        System.out.println("El motor tiene: \n"+cilindraje);
+        System.out.println("El motor tiene: \n"+cilindraje+"\nY de combustible: \n"+combustible);
 
     }
 

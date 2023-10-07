@@ -54,7 +54,7 @@ public class Auto {
         return motor;
     }
 
-    public void setMotor() {
+    public void setMotor(Motor motor) {
         this.motor = motor;
     }
 
